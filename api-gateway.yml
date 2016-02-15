@@ -50,6 +50,7 @@ security:
 # information about grants and authentication in the token itself.
 
 spring:
+  oauth2:
 # Note that the "/user" endpoint needs to provide the principle of the logged in user (/me endpoint)
     resource:
       userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
